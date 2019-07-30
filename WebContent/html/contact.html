@@ -1,0 +1,44 @@
+<div class='container-fluid frontImgAbout'>
+	<h4 class='text-center imgHead'>Contact Us</h4>
+</div>
+<div class="container-fluid" id="contactContent">
+	<div class="row">
+		<div class="col-md-7" id="contact"></div>
+		<div class="divider"></div>
+		<div class="col-md-3" id="address"></div>
+	</div>
+</div>
+<div id="siteLocation" class="container-fluid" style="opacity:0;">
+	<div class="row">
+		<div class="mainHeading col-md-12 text-center">
+			<h2>Find Us</h2>
+		</div>
+		<div id="map" class="col-md-12">
+		</div>
+	</div>
+</div>	
+<script>
+var imageUrl = '../img/background.png';
+$('.frontImgAbout').css('background-image', 'url(' + imageUrl + ')');
+$('.frontImgAbout').delay(600).animate({'opacity':'1'},800);
+$('.imgHead').delay(1000).animate({'opacity':'1'},800);
+$('#contactContent').delay(1000).animate({'opacity':'1'},800);
+$('#contact').delay(1000).animate({'opacity':'1'},800).load('../html/contactUsForm.html');
+$('#address').delay(1000).animate({'opacity':'1'},800).load('../html/address.html');
+$('#siteLocation').delay(1000).animate({'opacity':'1'},800);
+</script>	
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGepnzyvk2R13IsIFGx8qr7fjFQ6Gh8f4&callback=myMap"></script>
+<script>
+function myMap() {
+    var latLng = new google.maps.LatLng(22.850008, 75.549992);
+    var mapProp = {             
+            zoom: 7,
+            center: latLng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+ 
+    // Following Command Will Create the New Map Object
+    var map = new google.maps.Map(document.getElementById("map"), mapProp);
+    google.maps.event.addDomListener(window, "load", myMap);
+};
+</script> 

@@ -1,0 +1,72 @@
+<div class="row" id="mainHeaders" >
+	<div class="col-md-4 homeColumns">
+		<div class="col-md-12 mainHeading text-left">
+			<h1>About Us</h1>
+		</div> 
+		<div class="col-md-12 subHeading text-left">
+			<p>We are one of the leading and largest Printing Packaging Houses.
+			<br><br> We have multiple machines capable of printing different sizes on wide range of materials.</p>
+		</div>
+		<a id="moreAboutUs" class="more btn btn-default" href="#aboutTab">Read More</a>
+	</div>
+	<div class="divider"></div>
+	<div class="col-md-4 homeColumns">
+		<div class="col-md-12 mainHeading text-left">
+			<h1>Products</h1>
+		</div> 
+		<div class="col-md-12 subHeading text-left">
+			<p>We are best in Printing on Paper, Duplex Board, Label Stock, Polyethylene, Polypropylene, Polyester, BOPP and other substrates.
+			<br><br>We specialize in large scale Sheet Fed Offset, Flexographic Printing and Gravure Printing.</p>
+		</div>
+		<a id="moreProducts" class="more btn btn-default" href="#productsTab">Read More</a>
+	</div>
+	<div class="divider"></div>
+	<div class="col-md-4 homeColumns">
+		<div class="col-md-12 mainHeading text-left">
+			<h1>Infrastructure</h1>
+		</div> 
+		<div class="col-md-12 subHeading text-left">
+			<p>We are ISO 9001 - 2000 certified company.
+			<br><br>We have well equipped facility to serve pharmaceutical companies falling under preview of US FDA and MHRA.</p>
+		</div>
+		<a id="moreInfrastruct" class="more btn btn-default" href="#infrastructTab">Read More</a>
+	</div>
+</div>
+<div class="container-fluid" id="clients"></div>
+<div class="container-fluid" id="findUs">
+	<div class="row">
+		<div class="col-md-offset-2 col-md-6" id="contactForm"></div>
+    	<div class="divider"></div>
+    	<div class="col-md-4 text-left" id="siteAddr"></div>
+    </div>
+</div>    
+<script>
+	
+	$(window).scroll(function(){
+		$("#mainHeaders").delay(600).animate({'opacity':'1'},800);
+		$("#clients").delay(1800).animate({'opacity':'1'},800).load('../html/clientsCarousel.html'); 
+		$("#findUs").delay(3000).animate({'opacity':'1'},800);
+		$('#contactForm').load('../html/contactUsForm.html');
+		$('#siteAddr').load('../html/address.html');
+	});
+	$('#moreAboutUs').click(function(){
+		$('.tab-pane').removeClass('active').addClass('fade');
+		$('.nav-link').removeClass('active');
+		$('#aboutNav a').addClass('active');
+		$('#aboutTab').removeClass('fade').addClass('active').load('../html/aboutUs.html');
+	});
+	$('#moreProducts').click(function(){
+		$('.tab-pane').removeClass('active').addClass('fade');
+		$('.nav-link').removeClass('active');
+		$('#productsNav a').addClass('active');
+		$('#productsTab').removeClass('fade').addClass('active').load('../html/products.html');
+	});
+	$('#moreInfrastruct').click(function(){
+		$('.tab-pane').removeClass('active').addClass('fade');
+		$('.nav-link').removeClass('active');
+		$('#infrastructNav a').addClass('active');
+		$('#infrastructTab').removeClass('fade').addClass('active').load('../html/infrastruct.html');
+	});
+</script>
+
+

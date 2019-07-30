@@ -1,0 +1,737 @@
+html{
+	min-height:100%;
+	width:100%;
+	position:relative;
+}
+body{
+	height:100%;
+	width:100%;
+	color:#ff5500;
+}
+
+#myLogo{
+	height:100px;
+	width:200px;
+	border-radius:20px;
+}
+#header{
+	margin-bottom:50px;
+}
+.navbar{
+	padding:0;
+}
+.navbar-brand{
+	padding-left:3rem;
+	padding-top:1rem;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,165,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border: 2px solid rgb(255,165,0,1);
+  
+}
+ .navbar-toggler:focus, .navbar-toggler:hover { outline: none !important; box-shadow: none; } 
+.navbar-custom{
+	background-color:transparent;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ff5500;
+    font-family: 'Raleway', sans-serif;
+    font-weight:700;
+    font-size:22px;
+    letter-spacing:1px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  	overflow: hidden;
+	margin-top:50px;
+	margin-right:7px;
+	background:linear-gradient(to bottom, #ff5500 0%, #ff5500 100% );
+	background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0px 0px;
+  	text-decoration: none;
+  	transition: background-size .2s;
+}
+.navbar-custom .navbar-nav .nav-link:hover{
+	color: #ffffff;
+    background-size:4px 50px;
+}
+.navbar-custom .navbar-nav .nav-link.active{
+	color: #ff5500;
+    background-size:4px 4px;
+}
+
+.carousel-indicators li {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color:#fff;
+}
+#myCarousel, .carousel, .carousel-inner, .carousel-item, .carousel-item img  
+{
+	height:773px;
+	max-height:100%;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* override bootstraps fixed size */
+  width: 40px;
+  height: 40px;
+}
+.carousel-item{
+	transition: transform 2s ease, opacity .5s ease-out;
+}
+
+/* The animation code
+@keyframes carouselCaptions {
+  from{left:0px; bottom:300px;}
+  to{left:0px; bottom:400px;}
+} */
+
+/* The element to apply the animation to */
+.carousel-caption {
+  width: 80%;
+  height: auto;
+  color:#fff;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  bottom:420px;
+  left:125px;
+  text-align:center;
+  text-transform:uppercase;
+  background-color: transparent;
+  animation-name: carouselCaptions;
+  animation-duration: 10s;
+}
+.carousel-caption h1{font-size:230%;font-weight:bolder;opacity:0;}
+.carousel-caption h3{font-size:190%;font-weight:bold;opacity:0;}
+ 
+.frontImgAbout{
+	background:url(../img/background.png) center center;
+	background-size:100% 100%;
+	height:400px;
+	margin-top:-7rem;
+	padding:0;
+	opacity:0;
+}
+.imgHead{
+	padding-top:200px;
+	text-transform:uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight:800;
+	font-size:120px;
+	letter-spacing:1px;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	opacity:0;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+#footer{
+	background:#ff5500;
+	height:50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;	
+	font-family: 'Raleway', sans-serif;
+	font-size:14px;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	color:#ffffff;
+}
+.container-fluid{
+	padding-left:0;
+	padding-right:0;
+}
+#homeTab,#aboutTab, #productsTab, #infrastructTab, #awardsTab, #contactTab{
+	padding-left:0;
+	padding-right:0;
+	margin-top:-10rem;
+	height:100%;
+	max-height:100%;
+}
+.divider{
+	width:5px;
+	height:inherit;
+	border-left:2px solid #ff5500;
+	margin:20px 0;
+}
+.mainHeading{
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	font-size:140%;
+	margin-top:15px;
+}
+.subHeading{
+	font-family: 'Raleway', sans-serif;
+	font-size:120%;
+	font-style:normal;
+	font-weight:500;
+	margin-top:15px;
+}
+.more{
+	background:none;
+	width:112px;
+	height:36px;
+	font-family: 'Raleway', sans-serif;
+	color:#ff5500;
+	font-weight:900;
+	background:linear-gradient(to bottom, #ff5500 0%, #ff5500 100% );
+	background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0px 0px;
+  	text-decoration: none;
+  	transition: background-size .2s;
+}
+.more:hover{
+	color: #ffffff;
+    background-size:4px 50px;
+}
+.homeColumns{
+	max-width:32%;
+}
+#mainHeaders, #clients, #findUs{
+	opacity:0;
+	transition: opacity 1s ease-in;
+	margin:20px 0px;
+}
+#clients{
+	height:100%;
+	margin:50px auto;
+}
+.logoSection{
+	margin:20px 20px;
+}
+.logo {
+	border: 2px solid #fff;
+	margin-bottom: 25px;
+	width: 100%;
+	height: 80%;
+	opacity: 1;
+	border-radius:5px;
+}
+.logo:hover {
+	border-color: #ff5500;
+}
+ 
+
+input::-webkit-input-placeholder 
+{ /* Chrome/Opera/Safari */
+	color: #ff5500 !important;
+	font-family: 'Raleway', sans-serif;
+	font-weight:normal;
+	font-size:12px;
+}
+input::-moz-placeholder 
+{ /* Firefox 19+ */
+	color: #ff5500 !important;
+	font-family: 'Raleway', sans-serif;
+	font-weight:normal;
+	font-size:12px;
+}
+input:-ms-input-placeholder 
+{ /* IE 10+ */
+	color: #ff5500 !important;
+	font-family: 'Raleway', sans-serif;
+	font-weight:normal;
+	font-size:12px;
+}
+
+.form-control:focus{
+	box-shadow:none;
+	border:2px solid #ff5500;
+}
+
+button[type=submit], .form-control{
+	background:none;
+	color:#ff5500;
+	border:2px solid #ff5500;
+	font-size:16px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:900;
+	height:40px;
+	margin-bottom:20px;
+	border-radius:2px;
+}
+button:focus {
+	outline:none !important;
+}
+button[type=submit]:hover{
+	color:white;
+	background:#ff5500;
+}
+#map{
+	height:400px;
+	width:100%;
+}
+#contactContent{
+	opacity:0;
+	height:100%;
+}
+#contact{
+	opacity:0;
+	margin:20px;
+}
+#address{
+	opacity:0;
+	margin:20px;
+}
+#contact .contact-info{
+	color:white;
+	height:100%;
+	padding: 20px;
+	background:#ff5500;
+}
+#contact .contact-info img{
+	height:50px;
+	width:50px;
+	margin:20px 5px 0px 5px;
+}
+.contact-info h2{
+	font-size:165%;
+	margin:20px 5px;
+}
+#contact .contact-info h4{
+	font-size:135%;
+	margin:20px 5px;
+}
+#contact button[type=submit]{
+	width:120px;
+}
+#contact .form-control{
+	width:400px;
+	color:#ff5500;
+	font-family: 'Raleway', sans-serif;
+}
+
+@media all and (max-width:1200px){
+	
+	#myLogo{
+		height:75px;
+		width:175px;
+		margin-top:10px;
+		margin-bottom:20px;
+		padding-bottom:0; 
+	}
+	.navbar-custom .navbar-nav .nav-link{
+		font-size:22px;
+		margin-top:0px;
+	}
+	.navbar-collapse{
+		padding:0 40px;
+	}
+	#myCarousel, .carousel, .carousel-inner, .carousel-item, .carousel-item img  
+	{
+		height:480px;
+	}
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+  	/* override bootstraps fixed size */
+  		width: 30px;
+  		height: 30px;
+  		margin-top:70px;
+	}
+	.carousel-caption {
+  		bottom:270px;
+  		width:80%;
+  		left:70px;
+  	}
+  	.carousel-caption h1{
+  		font-size:170%;
+  	}
+  	.carousel-caption h3{
+  		font-size:135%;
+  	}
+  	.frontImgAbout{
+		height:420px;
+	}
+	#mainHeaders,#clients, #findUs{
+		opacity	:1;
+	}
+	.custom-toggler{
+		margin-right:12px;
+		padding:0.1px 4px;	
+	}
+	.imgHead{
+		padding-top:250px;
+		font-size:60px;
+	}
+	/* .homeColumns{
+		max-width:100%;	
+	} */
+	.mainHeading h1{
+		font-size:35px;
+	}
+	.subHeading{
+		font-size:110%;
+	}
+	/* .divider{
+		width:100%;
+		height:5px;
+		border-left:none;
+		border-bottom:2px solid #ff5500;
+		margin:20px 20px;
+	} */
+	#footer{
+		height:20px;
+		padding:20px 0;
+		margin-bottom:0px;
+	}
+	#contact{
+		margin:20px 5px 20px 0;
+	}
+	#contact .container, #address .container{
+		max-width:100%;
+		padding:0; 
+		margin:20px;
+	}
+	#contact .contact-info{
+		height:100%;
+		width:100%;
+		padding:8px 5px;
+	}
+	#contact .contact-info img{
+		margin: 10px 5px 0px 5px;
+	}
+	#contact .contact-info h2{
+		margin: 10px 5px 0px 5px;
+		font-size:150%;
+	}
+	#contact .contact-info h4{
+		margin: 10px 5px 10px 5px;
+		font-size:120%;
+	}
+	#contact .contact-form{
+		margin-left:0;
+		height:100%;
+		width:100%;
+		padding:8px 5px;
+	}
+	#contact .form-control{
+		width:100%;
+	}
+	
+}
+@media all and (max-width:992px){
+	
+	#myLogo{
+		height:75px;
+		width:175px;
+		margin-top:10px;
+		margin-bottom:20px;
+		padding-bottom:0; 
+	}
+	.navbar-custom .navbar-nav .nav-link{
+		font-size:22px;
+		margin-top:0px;
+	}
+	.navbar-collapse{
+		padding:0 40px;
+	}
+	#myCarousel, .carousel, .carousel-inner, .carousel-item, .carousel-item img  
+	{
+		height:480px;
+	}
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+  	/* override bootstraps fixed size */
+  		width: 30px;
+  		height: 30px;
+  		margin-top:70px;
+	}
+	.carousel-caption {
+  		bottom:270px;
+  		width:80%;
+  		left:70px;
+  	}
+  	.carousel-caption h1{
+  		font-size:170%;
+  	}
+  	.carousel-caption h3{
+  		font-size:135%;
+  	}
+  	.frontImgAbout{
+		height:420px;
+	}
+	#mainHeaders,#clients, #findUs{
+		opacity	:1;
+	}
+	.custom-toggler{
+		margin-right:12px;
+		padding:0.1px 4px;	
+	}
+	.imgHead{
+		padding-top:250px;
+		font-size:60px;
+	}
+	/* .homeColumns{
+		max-width:100%;	
+	} */
+	.mainHeading h1{
+		font-size:35px;
+	}
+	.subHeading{
+		font-size:110%;
+	}
+	#footer{
+		height:20px;
+		padding:20px 0;
+		margin-bottom:0px;
+	}
+	#contact{
+		margin:20px 5px 20px 0;
+	}
+	#contact .container{
+		max-width:100%;
+		padding:0 35px 0 0; 
+		margin:20px;
+	}
+	#address .container
+	{
+		max-width:100%;
+		padding:0; 
+		margin:20px;
+	}
+	#contact .contact-info{
+		height:100%;
+		width:100%;
+		padding:8px 5px;
+	}
+	#contact .contact-info img{
+		margin: 10px 5px 0px 5px;
+	}
+	#contact .contact-info h2{
+		margin: 10px 5px 0px 5px;
+		font-size:150%;
+	}
+	#contact .contact-info h4{
+		margin: 10px 5px 10px 5px;
+		font-size:120%;
+	}
+	#contact .contact-form{
+		margin-left:0;
+		height:100%;
+		width:100%;
+		padding:8px 5px;
+	}
+	#contact .form-control{
+		width:100%;
+	}
+	
+}
+@media all and (max-width:768px){
+	
+	#myLogo{
+		height:75px;
+		width:175px;
+		margin-top:10px;
+		margin-bottom:20px;
+		padding-bottom:0; 
+	}
+	.navbar-custom .navbar-nav .nav-link{
+		font-size:22px;
+		margin-top:0px;
+	}
+	.navbar-collapse{
+		padding:0 40px;
+	}
+	#myCarousel, .carousel, .carousel-inner, .carousel-item, .carousel-item img  
+	{
+		height:420px;
+	}
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+  	/* override bootstraps fixed size */
+  		width: 30px;
+  		height: 30px;
+  		margin-top:70px;
+	}
+	.carousel-caption {
+  		bottom:200px;
+  		width:80%;
+  		left:70px;
+  	}
+  	.carousel-caption h1{
+  		font-size:140%;
+  	}
+  	.frontImgAbout{
+		height:420px;
+	}
+	#mainHeaders,#clients, #findUs{
+		opacity	:1;
+	}
+	.custom-toggler{
+		margin-right:12px;
+		padding:0.1px 4px;	
+	}
+	.imgHead{
+		padding-top:250px;
+		font-size:60px;
+	}
+	.homeColumns{
+		max-width:100%;	
+	}
+	.mainHeading h1{
+		font-size:35px;
+	}
+	.subHeading{
+		font-size:110%;
+	}
+	.divider{
+		width:100%;
+		height:5px;
+		border-left:none;
+		border-bottom:2px solid #ff5500;
+		margin:20px 20px;
+	}
+	#footer{
+		height:20px;
+		padding:20px 0;
+		margin-bottom:0px;
+	}
+	#contact{
+		margin:20px 5px 20px 0; 
+	}
+	#contact .contact-info{
+		height:auto;
+		width:100%;
+		padding:8px 5px;
+	}
+	
+	#contact .contact-info img{
+		margin: 10px 5px 0px 5px;
+	}
+	#contact .contact-info h2{
+		margin: 10px 5px 0px 5px;
+		font-size:150%;
+	}
+	#contact .contact-info h4{
+		margin: 10px 5px 10px 5px;
+		font-size:120%;
+	}
+	#contact .contact-form{
+		margin-left:0;
+		height:auto;
+		width:100%;
+		padding:8px 5px;
+	}
+	#contact .form-control{
+		width:100%;
+	}
+	
+}
+@media all and (max-width:480px){
+	
+	#myLogo{
+		height:75px;
+		width:175px;
+		margin-top:10px;
+		margin-bottom:20px;
+		padding-bottom:0; 
+	}
+	.navbar-custom .navbar-nav .nav-link{
+		font-size:20px;
+		margin-top:0px;
+	}
+	.navbar-collapse{
+		padding:0 20px;
+	}
+	#myCarousel, .carousel, .carousel-inner, .carousel-item, .carousel-item img  
+	{
+		height:420px;
+	}
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+  	/* override bootstraps fixed size */
+  		width: 30px;
+  		height: 30px;
+  		margin-top:70px;
+	}
+	.carousel-caption {
+  		bottom:220px;
+  		width:80%;
+  		left:45px;
+  	}
+  	.carousel-caption h1{
+  		font-size:135%;
+  	}
+  	.frontImgAbout{
+		height:420px;
+	}
+	#mainHeaders,#clients, #findUs{
+		opacity:1;
+	}
+	.custom-toggler{
+		margin-right:12px;
+		padding:0.1px 4px;	
+	}
+	.imgHead{
+		padding-top:250px;
+		font-size:50px;
+	}
+	.homeColumns{
+		max-width:100%;	
+	}
+	.mainHeading h1{
+		font-size:35px;
+	}
+	.subHeading{
+		font-size:110%;
+	}
+	.divider{
+		width:100%;
+		height:5px;
+		border-left:none;
+		border-bottom:2px solid #ff5500;
+		margin:20px 20px;
+	}
+	#footer{
+		height:20px;
+		padding:20px 0;
+		margin-bottom:0px;
+	}
+	#contact{
+		margin:20px 5px 20px 0; 
+	}
+	#contact .contact-info{
+		height:auto;
+		width:100%;
+		padding:8px 5px;
+	}
+	
+	#contact .contact-info img{
+		margin: 10px 5px 0px 5px;
+	}
+	#contact .contact-info h2{
+		margin: 10px 5px 0px 5px;
+		font-size:150%;
+	}
+	#contact .contact-info h4{
+		margin: 10px 5px 10px 5px;
+		font-size:120%;
+	}
+	#contact .contact-form{
+		margin-left:0;
+		height:auto;
+		width:100%;
+		padding:8px 5px;
+	}
+	#contact .form-control{
+		width:100%;
+	}
+	
+}
+
+
