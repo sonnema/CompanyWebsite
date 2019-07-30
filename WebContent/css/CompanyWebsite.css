@@ -113,7 +113,7 @@ body{
   animation-duration: 10s;
 }
 .carousel-caption h1{font-size:230%;font-weight:bolder;opacity:0;}
-.carousel-caption h3{font-size:190%;font-weight:bold;opacity:0;}
+.carousel-caption h3{font-size:175%;font-weight:bold;opacity:0;}
  
 .frontImgAbout{
 	background:url(../img/background.png) center center;
@@ -283,6 +283,7 @@ button[type=submit]:hover{
 #contact{
 	opacity:0;
 	margin:20px;
+	max-width:50%;
 }
 #address{
 	opacity:0;
@@ -291,7 +292,7 @@ button[type=submit]:hover{
 #contact .contact-info{
 	color:white;
 	height:100%;
-	padding: 20px;
+	padding: 20px 0 20px 5px;
 	background:#ff5500;
 }
 #contact .contact-info img{
