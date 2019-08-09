@@ -1,0 +1,72 @@
+#machineList{
+	border-radius:5px;
+	margin:20px 60px;
+}
+
+#infrastructHeadLines .subHeading{
+	margin:20px;
+	padding:15px 10px;
+	border-radius:5px;
+}
+#infrastructHeadLines .first{
+	margin-left:50px;
+}
+#infrastructHeadLines li{
+	list-style:url(../img/rhombus.png);
+}
+#showMoreMachines{
+	background:none;
+	color:#ff5500;
+	border:2px solid #ff5500;
+	font-size:16px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:900;
+	height:40px;
+	padding:15px;
+	line-height:9px;
+	margin:20px auto;
+	border-radius:5px;
+	text-decoration:none;
+}
+#showMoreMachines:focus {
+	outline:none !important;
+	box-shadow:none !important;
+	
+}
+#showMoreMachines:hover{
+	color:white;
+	background:#ff5500;
+}
+#collapsibleMachineList{
+	transition: transform 2s ease, opacity .5s ease-out;
+}
+@media all and (max-width:1200px){
+	#infrastructHeadLines .img-responsive{
+		width:95%;
+	}
+}
+@media all and (max-width:992px){
+	#infrastructHeadLines .mainHeading{
+		font-size:145%;
+	}
+	#infrastructHeadLines .first{
+		margin-left:36px;
+	}	
+}
+@media all and (max-width:768px){
+	
+	#infrastructHeadLines .mainHeading{
+		font-size:136%;
+	}
+	#infrastructHeadLines h3{
+		margin:15px 40px;
+	}
+	#infrastructHeadLines .subHeading{
+		margin:-15px 60px;
+	}
+	#infrastructHeadLines .img-responsive{
+		width:90%;
+		height:90%;
+	}
+	 
+}

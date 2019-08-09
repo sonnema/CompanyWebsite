@@ -1,0 +1,34 @@
+#productsHeadLines .quotes{
+		
+}
+#productsHeadLines .subHeading{
+	margin:20px;
+	padding:15px 10px;
+	border-radius:5px;
+}
+#productsHeadLines .first{
+	margin-left:50px;
+}
+.cartons li{
+	list-style:url(../img/rhombus.png);
+}
+@media all and (max-width:992px){
+	#productsHeadLines .mainHeading{
+		font-size:145%;
+	}
+	#productsHeadLines .first{
+		margin-left:36px;
+	}	
+}
+@media all and (max-width:768px){
+	#productsHeadLines .mainHeading{
+		font-size:136%;
+	}
+	#productsHeadLines h3{
+		margin:15px 40px;
+	}
+	
+	#productsHeadLines .subHeading{
+		margin:15px 60px;
+	}
+}
