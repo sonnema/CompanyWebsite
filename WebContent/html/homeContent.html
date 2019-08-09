@@ -9,7 +9,7 @@
 		</div>
 		<a id="moreAboutUs" class="more btn btn-default" href="#aboutTab">Read More</a>
 	</div>
-	<div class="divider"></div>
+	<div class="divider d-md-none"></div>
 	<div class="col-md-4 homeColumns">
 		<div class="col-md-12 mainHeading text-left">
 			<h1>Products</h1>
@@ -20,7 +20,7 @@
 		</div>
 		<a id="moreProducts" class="more btn btn-default" href="#productsTab">Read More</a>
 	</div>
-	<div class="divider"></div>
+	<div class="divider d-md-none"></div>
 	<div class="col-md-4 homeColumns">
 		<div class="col-md-12 mainHeading text-left">
 			<h1>Infrastructure</h1>
@@ -32,22 +32,40 @@
 		<a id="moreInfrastruct" class="more btn btn-default" href="#infrastructTab">Read More</a>
 	</div>
 </div>
-<div class="container-fluid" id="clients"></div>
+<div class="row" id="awards">
+	<div class="col-md-12 mainHeading text-center">
+			<h1>Awards</h1>
+	</div>
+	<div class="col-md-12 text-center subHeading" id="awardsDetails" >
+		<ul class="text-left">
+			<li>Self-made Industrialist of the Year awarded by vice-president of India to Mr J.P. Nema in 1983.</li>
+			<li>Featured in Print Week "Power 100" 2018 list of packaging converters across India.</li>
+			<li>Featured as a Profile Company in the prestigious print week magazine in August 2011.</li>
+		</ul>	
+		<ul class="d-none d-md-block text-left">	
+			<li>Appreciation Award given by National Panasonic Batteries in 1998 for Long Association, Valuable Support and Cooperation Extended.</li>
+			<li>Government of India - Ministry of Defence - Department of Revenue Appreciation Award for 2nd highest contribution to Central Excise Revenue in its category in 2010.</li>
+			<li>Invited by the Government of Mauritius for setting up a packaging unit under Public Private Partnership in 1995.</li>
+		</ul>
+	</div>
+</div>
+<div class="row" id="clients"></div>
 <div class="container-fluid" id="findUs">
 	<div class="row">
-		<div class="col-md-offset-2 col-md-6" id="contactForm"></div>
+		<div class="col-md-6" id="contactForm"></div>
     	<div class="divider"></div>
-    	<div class="col-md-4 text-left" id="siteAddr"></div>
+    	<div class="col-md-6 text-left" id="address"></div>
     </div>
 </div>    
 <script>
 	
 	$(window).scroll(function(){
 		$("#mainHeaders").delay(600).animate({'opacity':'1'},800);
+		$("#awards").delay(1800).animate({'opacity':'1'},800);
 		$("#clients").delay(1800).animate({'opacity':'1'},800).load('../html/clientsCarousel.html'); 
 		$("#findUs").delay(3000).animate({'opacity':'1'},800);
-		$('#contactForm').load('../html/contactUsForm.html');
-		$('#siteAddr').load('../html/address.html');
+		$('#contactForm').delay(3000).animate({'opacity':'1'},800).load('../html/contactUsForm.html');
+		$('#address').delay(3000).animate({'opacity':'1'},800).load('../html/address.html');
 	});
 	$('#moreAboutUs').click(function(){
 		$('.tab-pane').removeClass('active').addClass('fade');

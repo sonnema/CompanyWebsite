@@ -1,11 +1,106 @@
 <div class='container-fluid frontImgAbout'>
 	<h4 class='text-center imgHead'>About Us</h4>
 </div>
-
+<div class="container-fluid" id="aboutContent">
+	<div class="offset-md-1 col-md-10">
+		<div class="row" id="headLines">
+			<div class="col-md-12 text-center" > 
+				<h3 class="mainHeading">Started  in 1960, Pragati Global Group has been serving some of the biggest corporate houses in the country.</h3>
+				<p class="subHeading">Long lasting relationship with leading players from Pharma, FMCG, Food & Beverage and Petrochemical and Energy industries.</p>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="col-md-4 text-center" id="background" >
+				<h3 class="mainHeading">Background</h3>
+				<div id="backgroundDetails" class="subHeading">
+					<ul class="text-left">
+						<li>Mr J.P. Nema established the company in 1960.</li>
+						<li>Proudly having 100% share-holding with promoters.</li>
+						<li>Lead by second and third generation promoters currently.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12 text-center" id="keyFeatures">
+				<h3 class="mainHeading">Key Features</h3>
+				<div id="keyFeaturesDetails" class="subHeading">
+					<ul class="text-left">
+						<li>We are ISO 9001 - 2000 certified facility.</li>
+						<li>Well equipped facility to serve pharmaceutical companies falling under preview of US FDA and MHRA. </li>
+					</ul>
+					<ul id="collapsibleFeatures" class="text-left collapse">
+						<li>Strategically located state of art plant spread across an area of 200,000 sqft in Rangwasa, an industrial area of Indore city(14km from airport).</li>
+					</ul>
+					<div class="offset-xs-2 col-xs-8 text-center">
+						<a class="btn btn-default" id="showMoreFeatures" href="#collapsibleFeatures" data-toggle="collapse">Show More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12 text-center" id="quality" >
+				<h3 class="mainHeading">Quality Focus</h3>
+				<div id="qualityDetails" class="subHeading">
+					<ul class="text-left">
+						<li>Conduct regular audits by major multi-national pharmaceutical companies viz. Lupin, Ranbaxy, Zydus Hospira, Torrent, Piramal Healthcare, etc.</li>
+						<li>Documented standardized procedures to carry out operational activities.</li>
+					</ul>
+					<ul id="collapsibleQuality" class="text-left collapse">
+						<li>Qualified and well trained staff to carry out quality checks.</li>
+						<li>Dedicated QC laboratory.</li>
+						<li>Strong system of error detection and rectification ensuring almost error free deliveries.</li>
+						<li>Commitment to environment and work Place Safety.</li>
+					</ul>	
+					<div class="offset-xs-2 col-xs-8 text-center">
+						<a class="btn btn-default" id="showMoreQuality" href="#collapsibleQuality" data-toggle="collapse">Show More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="leadTeam">
+			<div class="col-md-12 text-center" >
+				<h3 class="mainHeading">Leadership Team</h3>
+				<h5 class="subHeading" id="belief">&ldquo; Pragati Graphics is one such organization which stands tall on strong foundations of honesty, reliability and customer satisfaction.&rdquo;</h5>
+				<div id="leadTeamDetails" class="subHeading"></div>
+			</div>
+		</div>	
+		<div class="row" id="keyEvents">
+			<div class="col-md-12 text-center">
+				<h3 class="mainHeading">Company Evolution</h3>
+				<div id="keyEventsDetails" class="subHeading"></div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script>
-var imageUrl = '../img/background.png';
-$('.frontImgAbout').css('background-image', 'url(' + imageUrl + ')');
-$('.frontImgAbout').delay(600).animate({'opacity':'1'},800);
-$('.imgHead').delay('1000').animate({'opacity':'1'},800);
+	var imageUrl = '../img/background.png';
+	$('.frontImgAbout').css('background-image', 'url(' + imageUrl + ')');
+	$('.frontImgAbout').delay(600).animate({'opacity':'1'},800);
+	$('.imgHead').delay('1000').animate({'opacity':'1'},800);
+	/* $('.collapse').on('shown.bs.collapse',function(){
+		$(this).parent().find('.stylingCollapsibles a img').attr('src','../img/downArrow.png');
+	});
+	$('.collapse').on('hidden.bs.collapse',function(){
+		$(this).parent().find('.stylingCollapsibles a img').attr('src',"../img/rightArrow.png");
+	}); */
+	$("#showMoreFeatures").click(function(){
+		if( $(this).html() == "Show More")
+    	{
+			$(this).text("Show Less");	
+    	}
+    	else
+    	{
+    		$(this).text("Show More");
+    	}	
+	});
+	$("#showMoreQuality").click(function(){
+		if( $(this).html() == "Show More")
+    	{
+			$(this).text("Show Less");	
+    	}
+    	else
+    	{
+    		$(this).text("Show More");
+    	}	
+	});
+	$('#leadTeamDetails').load('../html/leadTeam.html');
+	$('#keyEventsDetails').load('../html/keyEvents.html');
 </script>	

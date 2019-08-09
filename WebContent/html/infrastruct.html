@@ -1,9 +1,77 @@
 <div class='container-fluid frontImgAbout'>
 	<h4 class='text-center imgHead'>Infrastructure</h4>
 </div>
+<div class="container-fluid" id="infrastructContent">
+	<div class="offset-md-1 col-md-10" id="infrastructHeadLines">
+		<div class="row text-center">
+			<div class="col-md-12 text-center">
+				<h3 class="mainHeading text-uppercase">
+					Our Plant and Machinery	  
+				</h3>
+				<p class="subHeading colorOrange">
+					At Pragati Global, we adhere to higher standards of quality and our unit has fully equipped machineries to give the complete finish and satisfaction to the customer. We invest in latest Technology from pre press stage to final execution.
+				</p>
+			</div>
+		</div>
+		<div class="row text-center bg-white"  id="machineList">
+			<div class="col-md-12 text-center" >
+				<h3 class="mainHeading text-uppercase ">
+					Our machineries 	  
+				</h3>
+			</div>
+			<div class="col-md-5 subHeading text-center">	
+				<ul class="text-left">
+					<li>KBA Rapida 72-5 Colour with Colortronic</li>
+					<li>Roland 700 5 color with coater(UV)</li>
+					<li>KBA Rapida 104-6 Colour with Double Coater(UV)</li>
+					<li>Komori Lithrone 102 2 color Printing Machines.</li>
+					<li>2 Polar EMC 115 Monitor Fully Computerized Paper Cutting Machines</li>
+					<li>2 High Speed fully automatic cutting  and creasing machine with stripper.</li>
+				</ul>
+			</div>
+			<div class="divider d-none d-lg-block"></div>
+			<div id="collapsibleMachineList" class="collapse col-md-5 subHeading text-center d-md-block">	
+				<ul class="text-left">
+					<li>2 High Speed Folder Gluer with 4 corner &amp; 6 corner abilities.</li>
+					<li>2 Automatic Paper Folding Machines.</li>
+					<li>Ceka(Line Carton Making) Machine.</li>
+					<li>2 Gi Due Combat 370K - 7 Color Full UV Press to Print High Quality Labels.</li>
+					<li>Flytech 100 Integrated Camera Based Software Controlled Label Inspection System.</li>
+					<li>Grafatronic(Nikka) Integrated Camera Based Software Controlled Label Inspection System.</li>
+				</ul>
+			</div>
+			<div class="col text-center d-md-none">
+				<a class="btn btn-default" id="showMoreMachines" href="#collapsibleMachineList" data-toggle="collapse">Show More</a>
+			</div>
+		</div>
+		<div class="row" >
+			<div class="col-md-12">	
+				<h3 class="mainHeading text-uppercase text-center">
+					Finished Allied Offset &amp; Flexography	  
+				</h3>
+			</div>	
+			<div class="first col-md-5 subHeading text-center">	
+				<img src="../img/AutomaticDieCutter.png" class="img-responsive">	
+			</div>
+			<div class="col-md-5 subHeading text-center">	
+				<img src="../img/LinerPasting.png" class="img-responsive">
+			</div>
+		</div>
+	</div>
+</div>
 <script>
 var imageUrl = '../img/background.png';
 $('.frontImgAbout').css('background-image', 'url(' + imageUrl + ')');
 $('.frontImgAbout').delay(600).animate({'opacity':'1'},800);
 $('.imgHead').delay('1000').animate({'opacity':'1'},800);
+$("#showMoreMachines").click(function(){
+	if( $(this).html() == "Show More")
+	{
+		$(this).text("Show Less");	
+	}
+	else
+	{
+		$(this).text("Show More");
+	}	
+});
 </script>	

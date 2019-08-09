@@ -44,16 +44,17 @@ $(document).ready(function(){
 		
 	});
 	//On Scroll Event
-	$(window).scroll(function() {    
+	/*$(window).scroll(function() {    
 		scroll = $(document).scrollTop();
 		if (scroll > 50) 
 		{
 			$('.navbar-custom').css('background-color','#ffffff');
+			$('.navbar-custom').css('background-color','#33475b');
 		} 
 		else 
 		{
 			$('.navbar-custom').css('background-color','transparent');
 		}
-	});
+	});*/
 	
 });

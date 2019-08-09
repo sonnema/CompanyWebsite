@@ -1,9 +1,9 @@
 <div class="carousel slide carousel-fade" data-ride="carousel" id="myCarousel" >
   	<!-- Indicators -->
   	<ol class="carousel-indicators">
-  		<li data-target="myCarousel" data-slide-to="1" active></li>
-  		<li data-target="myCarousel" data-slide-to="2"></li>
-  		<li data-target="myCarousel" data-slide-to="3"></li>
+  		<li data-target="#myCarousel" data-slide-to="1" active></li>
+  		<li data-target="#myCarousel" data-slide-to="2"></li>
+  		<li data-target="#myCarousel" data-slide-to="3"></li>
   	</ol>
   	<!-- Slides -->
   	<div class="carousel-inner">
@@ -41,7 +41,7 @@
 </div>
 <script>	
 	$('#myCarousel').carousel({
-      interval:5000
+      interval:2000
     });
 	$('h1').delay('1000').animate({'opacity':'1'},800);
 	$('h3').delay('2000').animate({'opacity':'1'},800);

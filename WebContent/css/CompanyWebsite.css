@@ -6,11 +6,17 @@ html{
 body{
 	height:100%;
 	width:100%;
+	color:#33475b;
+	background-color:#d9dce5/* #f2f5ff; *//*#f2f5f8*//* #f2f5ff color RGB value is (242,245,255) */
+}
+.colorBlue{ 
+	color:#33475b;/*#33475b color RGB value is (51,71,91).*/
+}
+.colorOrange{
 	color:#ff5500;
 }
-
 #myLogo{
-	height:100px;
+	height:75px;
 	width:200px;
 	border-radius:20px;
 }
@@ -21,7 +27,7 @@ body{
 	padding:0;
 }
 .navbar-brand{
-	padding-left:3rem;
+	padding-left:1rem;
 	padding-top:1rem;
 }
 .custom-toggler .navbar-toggler-icon {
@@ -32,9 +38,11 @@ body{
   border: 2px solid rgb(255,165,0,1);
   
 }
- .navbar-toggler:focus, .navbar-toggler:hover { outline: none !important; box-shadow: none; } 
+ .navbar-toggler:focus, .navbar-toggler:hover { 
+ 	outline: none !important; box-shadow: none; 
+ } 
 .navbar-custom{
-	background-color:transparent;
+	background-color:#33475b;
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
@@ -46,7 +54,7 @@ body{
     text-overflow: ellipsis;
     white-space: nowrap;
   	overflow: hidden;
-	margin-top:50px;
+	margin-top:22px;
 	margin-right:7px;
 	background:linear-gradient(to bottom, #ff5500 0%, #ff5500 100% );
 	background-position: 0 100%;
@@ -89,6 +97,7 @@ body{
 }
 .carousel-item{
 	transition: transform 2s ease, opacity .5s ease-out;
+	cursor:pointer;
 }
 
 /* The animation code
@@ -131,12 +140,14 @@ body{
 	font-size:120px;
 	letter-spacing:1px;
 	color:white;
-	text-shadow: 2px 2px 4px #000000;
+	/* text-shadow: 2px 2px 4px #000000; */
 	opacity:0;
 	overflow:hidden;
 	text-overflow:ellipsis;
 }
-
+.tab-content{
+	padding-top:100px;
+}
 #footer{
 	background:#ff5500;
 	height:50px;
@@ -171,8 +182,8 @@ body{
 .mainHeading{
 	font-family: 'Raleway', sans-serif;
 	font-weight:bold;
-	font-size:140%;
 	margin-top:15px;
+	margin-bottom:15px;
 }
 .subHeading{
 	font-family: 'Raleway', sans-serif;
@@ -195,22 +206,54 @@ body{
   	text-decoration: none;
   	transition: background-size .2s;
 }
+.more:focus{
+	outline: none;
+    box-shadow:none;
+}
 .more:hover{
 	color: #ffffff;
     background-size:4px 50px;
+    margin-bottom:10px;
+    transition: margin-bottom 0.01s;
 }
+
 .homeColumns{
-	max-width:32%;
+	max-width:30%;
+	background:#fff;
+	margin:20px auto;
+	border-radius:5px;
 }
-#mainHeaders, #clients, #findUs{
+
+#mainHeaders, #clients, #findUs, #awards{
 	opacity:0;
 	transition: opacity 1s ease-in;
-	margin:20px 0px;
+	margin:20px auto;
+}
+#mainHeaders h1{
+	font-size:160%;
+	font-weight:900;
+}
+#awards{
+	background:white;
+	border-radius:5px;
+	height:auto;
+	margin:20px 20px;
+	color: #33475b;
+}
+#awards .subHeading li{
+	list-style-image:url(../img/rhombus.png);
+}
+#contactContent{
+	margin-top:20px;
+	margin-bottom:20px;
 }
 #clients{
-	height:100%;
-	margin:50px auto;
+	height:auto;
+	background:#fff;
+	margin:20px 20px;
+	border-radius:5px;
 }
+
 .logoSection{
 	margin:20px 20px;
 }
@@ -272,22 +315,12 @@ button[type=submit]:hover{
 	color:white;
 	background:#ff5500;
 }
+#addr{
+	padding: 20px 0 20px 5px;
+}
 #map{
 	height:400px;
 	width:100%;
-}
-#contactContent{
-	opacity:0;
-	height:100%;
-}
-#contact{
-	opacity:0;
-	margin:20px;
-	max-width:50%;
-}
-#address{
-	opacity:0;
-	margin:20px;
 }
 #contact .contact-info{
 	color:white;
@@ -322,8 +355,8 @@ button[type=submit]:hover{
 	#myLogo{
 		height:75px;
 		width:175px;
-		margin-top:10px;
-		margin-bottom:20px;
+		margin-top:0px;
+		margin-bottom:0px;
 		padding-bottom:0; 
 	}
 	.navbar-custom .navbar-nav .nav-link{
@@ -369,9 +402,7 @@ button[type=submit]:hover{
 		padding-top:250px;
 		font-size:60px;
 	}
-	/* .homeColumns{
-		max-width:100%;	
-	} */
+	
 	.mainHeading h1{
 		font-size:35px;
 	}
@@ -430,8 +461,8 @@ button[type=submit]:hover{
 	#myLogo{
 		height:75px;
 		width:175px;
-		margin-top:10px;
-		margin-bottom:20px;
+		margin-top:0px;
+		margin-bottom:0px;
 		padding-bottom:0; 
 	}
 	.navbar-custom .navbar-nav .nav-link{
@@ -477,14 +508,12 @@ button[type=submit]:hover{
 		padding-top:250px;
 		font-size:60px;
 	}
-	/* .homeColumns{
-		max-width:100%;	
-	} */
+	
 	.mainHeading h1{
 		font-size:35px;
 	}
 	.subHeading{
-		font-size:110%;
+		font-size:100%;
 	}
 	#footer{
 		height:20px;
@@ -537,8 +566,8 @@ button[type=submit]:hover{
 	#myLogo{
 		height:75px;
 		width:175px;
-		margin-top:10px;
-		margin-bottom:20px;
+		margin-top:0px;
+		margin-bottom:0px;
 		padding-bottom:0; 
 	}
 	.navbar-custom .navbar-nav .nav-link{
@@ -547,6 +576,10 @@ button[type=submit]:hover{
 	}
 	.navbar-collapse{
 		padding:0 40px;
+	}
+	.custom-toggler{
+		margin-right:12px;
+		padding:0.1px 4px;	
 	}
 	#myCarousel, .carousel, .carousel-inner, .carousel-item, .carousel-item img  
 	{
@@ -567,35 +600,38 @@ button[type=submit]:hover{
   	.carousel-caption h1{
   		font-size:140%;
   	}
-  	.frontImgAbout{
-		height:420px;
-	}
-	#mainHeaders,#clients, #findUs{
+  	#mainHeaders,#clients, #findUs{
 		opacity	:1;
 	}
-	.custom-toggler{
-		margin-right:12px;
-		padding:0.1px 4px;	
+	#mainHeaders{
+		background:#fff;
+		border-radius:5px;
+		margin:20px 48px;
+	}
+	.frontImgAbout{
+		height:420px;
 	}
 	.imgHead{
 		padding-top:250px;
 		font-size:60px;
 	}
 	.homeColumns{
-		max-width:100%;	
+		max-width:80%;	
+	}
+	#clients, #awards{
+		margin:20px 50px;
 	}
 	.mainHeading h1{
 		font-size:35px;
 	}
 	.subHeading{
-		font-size:110%;
+		font-size:105%;
 	}
 	.divider{
 		width:100%;
-		height:5px;
-		border-left:none;
-		border-bottom:2px solid #ff5500;
-		margin:20px 20px;
+		height:2px;
+		border:2px solid #ff5500;
+		margin:20px 70px;
 	}
 	#footer{
 		height:20px;
@@ -603,12 +639,13 @@ button[type=submit]:hover{
 		margin-bottom:0px;
 	}
 	#contact{
-		margin:20px 5px 20px 0; 
+		margin:5px 60px; 
 	}
 	#contact .contact-info{
 		height:auto;
 		width:100%;
-		padding:8px 5px;
+		padding:1px 5px;
+		border-radius:5px;
 	}
 	
 	#contact .contact-info img{
@@ -631,15 +668,25 @@ button[type=submit]:hover{
 	#contact .form-control{
 		width:100%;
 	}
-	
+	#siteLocation{
+		padding:0 40px;
+	}
+	#siteLocation .mainHeading{
+		font-size:120%;
+	}
+	#map{
+		border-radius:5px;
+	}
+	#addr{
+		padding-left:150px;
+	}
 }
 @media all and (max-width:480px){
-	
 	#myLogo{
 		height:75px;
 		width:175px;
-		margin-top:10px;
-		margin-bottom:20px;
+		margin-top:0px;
+		margin-bottom:0px;
 		padding-bottom:0; 
 	}
 	.navbar-custom .navbar-nav .nav-link{
@@ -683,28 +730,26 @@ button[type=submit]:hover{
 		font-size:50px;
 	}
 	.homeColumns{
-		max-width:100%;	
+		max-width:80%;	
 	}
 	.mainHeading h1{
 		font-size:35px;
 	}
-	.subHeading{
-		font-size:110%;
-	}
-	.divider{
+	
+	/* .divider{
 		width:100%;
 		height:5px;
 		border-left:none;
 		border-bottom:2px solid #ff5500;
-		margin:20px 20px;
-	}
+		margin:10px 24px;
+	} */
 	#footer{
 		height:20px;
 		padding:20px 0;
 		margin-bottom:0px;
 	}
 	#contact{
-		margin:20px 5px 20px 0; 
+		/* margin:20px 5px 20px 0; */ 
 	}
 	#contact .contact-info{
 		height:auto;
@@ -732,7 +777,9 @@ button[type=submit]:hover{
 	#contact .form-control{
 		width:100%;
 	}
-	
+	.subHeading{
+		font-size:100%;
+	}
 }
 
 

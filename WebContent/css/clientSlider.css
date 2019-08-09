@@ -1,18 +1,48 @@
 #clients h1{
+	font-size:180%;
+	font-weight:900;
 	background:#ff5500;
 	color:white;
 	text-align:center;
-	margin-top:20px;
+	margin:5px auto;
+	padding:5px 0;
+	width:100%;
+}
+
+#clientsCarousel, #clientsCarousel .carousel, #clientsCarousel .carousel-inner, #clientsCarousel .carousel-item  
+{
+	height:275px;
+	margin:0 auto;
+	max-height:100%;
+	background:#fff;
+	width:100%;
 }
 #clientsCarousel, #clientsCarousel .carousel, #clientsCarousel .carousel-inner, #clientsCarousel .carousel-item  
 {
-	height:230px;
-	max-height:100%;
+	height:275px;
+}
+#clientsCarousel{
+	margin:0px auto;
 }
 #clientsCarousel .row{
 	flex-wrap:inherit;
-	margin:auto 40px;
+	margin:5px 30px;
+	padding:5px 20px;
 }
+#clientsCarousel .carousel-item{
+	transition: transform 2s ease, opacity .5s ease-out;
+}
+#clientsCarousel .carousel-item .col-xs-4{
+	width:25%;
+	height:200px;
+	margin:5px auto;
+}
+#clientsCarousel img{
+	width:100%;
+	border:2px solid #f50;
+	border-radius:5px;
+}
+
 #clientsCarousel .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f50' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
@@ -25,32 +55,37 @@
   width: 40px;
   height: 40px;
 }
-#clientsCarousel .carousel-item{
-	transition: transform 2s ease, opacity .5s ease-out;
-	margin:0px 20px 20px 20px;
-}
+
 #clientsCarousel .carousel-indicators li {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border-radius: 100%;
   background-color:#f50;
-}
-#clientsCarousel img{
-	width:230px;
-	height:150px;
-	margin:20px 50px 0px 50px;
-	padding:5px;
-	border:2px solid #f50;
-	border-radius:5px;
 }
 
 #findUs{
 	height:100%;
 }
-#findUs .container{
-	margin:20px;
-	max-width:100%;
+#findUs .row{
+	margin:10px auto;
 }
+#findUs .contact{
+	padding-right:0;
+	padding-left:0;
+}
+#findUs .col-md-3{
+	padding-right:0;
+	padding-left:0;
+}
+#findUs #contactForm{
+	margin:20px auto;
+	max-width:48%;
+}
+#findUs #address{
+	margin-right:20px;
+	max-width:48%;
+}
+
 #findUs .contact-info{
 	height:100%;
 	width:100%;
@@ -59,10 +94,6 @@
 	margin-right:30px;
 	background:#ff5500;
 }
-#findUs #contactForm{
-	margin-left:5px;
-}
-	
 #findUs .contact-info img{
 	height:40px;
 	width:40px;
@@ -96,16 +127,12 @@
 	#clients h1{
 		font-size:30px;
 	}
-	#clientsCarousel .carousel-indicators{
-		margin-bottom:1px;
+	#clientsCarousel, #clientsCarousel .carousel, #clientsCarousel .carousel-inner, #clientsCarousel .carousel-item  
+	{
+		height:275px;
 	}
-	#clientsCarousel img{
-		width:210px;
-		height:120px;
-		margin:20px 30px 0px 30px;
-	}
-	#clientsCarousel .carousel-item{
-		margin:30px 15px 10px 15px;
+	#clientsCarousel .carousel-item .col-xs-4{
+		height:200px;
 	}
 	#clientsCarousel .carousel-control-prev-icon,
 	#clientsCarousel .carousel-control-next-icon {
@@ -123,9 +150,6 @@
 		padding:8px 0 8px 0;
 		margin-bottom:5px;
 	}
-	#findUs #contactForm{
-		margin-left:0;
-	}
 	
 	#findUs .contact-info img{
 		margin: 10px 5px 0px 5px;
@@ -136,6 +160,7 @@
 	#findUs .contact-info h4{
 		margin: 10px 5px 10px 5px;
 	}
+	
 	#findUs .form-control{
 		width:100%;
 	}
@@ -150,18 +175,17 @@
 
 @media all and (max-width:992px){
 	#clients h1{
-		font-size:30px;
+		font-size:28px;
+	}
+	#clientsCarousel, #clientsCarousel .carousel, #clientsCarousel .carousel-inner, #clientsCarousel .carousel-item  
+	{
+		height:240px;
+	}
+	#clientsCarousel .carousel-item .col-xs-4{
+		height:165px;
 	}
 	#clientsCarousel .carousel-indicators{
 		margin-bottom:1px;
-	}
-	#clientsCarousel img{
-		width:130px;
-		height:120px;
-		margin:20px 30px 0px 30px;
-	}
-	#clientsCarousel .carousel-item{
-		margin:30px 15px 10px 15px;
 	}
 	#clientsCarousel .carousel-control-prev-icon,
 	#clientsCarousel .carousel-control-next-icon {
@@ -170,29 +194,32 @@
   		height: 30px;
   		margin-top:0;
 	}
+	 
+	#findUs .col-md-3{
+		padding-right:0px;
+	}
 	#findUs .container{
-		margin:20px;
-		padding-right:50px;
+		margin:20px auto;
 	}
 	#findUs .contact-info{
 		height:100%;
-		width:130%;
 		padding:8px 0 8px 0;
 		margin-bottom:5px;
 	}
-	#findUs #contactForm{
-		margin-left:0;
-	}
-	
 	#findUs .contact-info img{
 		margin: 10px 5px 0px 5px;
 	}
 	#findUs .contact-info h2{
 		margin: 10px 5px 0px 5px;
+		font-size:135%;
 	}
 	#findUs .contact-info h4{
 		margin: 10px 5px 10px 5px;
+		font-size:100%;
 	}
+	#findUs .control-label{
+		max-width:51%;
+	} 
 	#findUs .form-control{
 		width:100%;
 	}
@@ -206,25 +233,30 @@
 }
 @media all and (max-width:768px){
 	#clients h1{
-		font-size:30px;
+		font-size:26px;
 	}
-	#clientsCarousel .carousel-indicators{
-		margin-bottom:1px;
+	#clientsCarousel, #clientsCarousel .carousel, #clientsCarousel .carousel-inner, #clientsCarousel .carousel-item  
+	{
+		height:210px;
 	}
-	#clientsCarousel img{
-		width:100px;
-		height:100px;
-		margin:20px 15px 0px 15px;
+	#clientsCarousel .row{
+		margin:5px 8px;
 	}
-	#clientsCarousel .carousel-item{
-		margin:30px 15px 10px 15px;
+	#clientsCarousel .carousel-item .col-xs-4{
+		height:135px;
 	}
+	
 	#clientsCarousel .carousel-control-prev-icon,
 	#clientsCarousel .carousel-control-next-icon {
   	/* override bootstraps fixed size */
   		width: 30px;
   		height: 30px;
   		margin-top:0;
+	}
+	#findUs{
+		border-radius:5px;
+		background:white;
+		width:82%;
 	}
 	#findUs .contact-info{
 		height:auto;
@@ -244,6 +276,14 @@
 	#findUs .contact-info h4{
 		margin: 10px 5px 10px 20px;
 	}
+	#findUs #contactForm{
+		max-width:100%;
+		margin:20px 32px;
+	}
+	#findUs #address{
+		margin:0px 0px;
+		max-width:100%;
+	}
 	#findUs .form-control{
 		width:100%;
 	}
@@ -254,18 +294,23 @@
 		width:125px;
 		font-size:18px;
 	}
+		
 }
 @media all and (max-width:480px){
+	
 	#clients h1{
-		font-size:30px;
+		font-size:22px;
 	}
-	#clientsCarousel img{
-		width:80px;
-		height:100px;
-		margin:20px 14px 0px 14px;
+	#clientsCarousel, #clientsCarousel .carousel, #clientsCarousel .carousel-inner, #clientsCarousel .carousel-item  
+	{
+		height:165px;
 	}
-	#clientsCarousel .carousel-item{
-		margin:30px 14px 10px 14px;
+	#clientCarousel .row{
+		margin:5px 8px;
+	}
+	#clientsCarousel .carousel-item .col-xs-4{
+		height:98px;
+		width:30%;
 	}
 	#clientsCarousel .carousel-control-prev-icon,
 	#clientsCarousel .carousel-control-next-icon {
@@ -274,15 +319,22 @@
   		height: 30px;
   		margin-top:0;
 	}
+	#findUs{
+		width:76%;
+		margin:20px auto;
+	}
+	#findUs #contactForm{
+		margin:0px 0px;
+	}
+	#findUs #siteAddr, #findUs #offcAddr{
+		margin:20px auto;
+	}
 	#findUs .contact-info{
 		height:auto;
 		width:100%;
 		padding:8px 0 1px 0;
-		margin-bottom:5px;
 	}
-	#findUs #contactForm{
-		margin-left:0;
-	}
+	
 	#findUs .contact-info img{
 		margin: 10px 5px 0px 20px;
 	}
